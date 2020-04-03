@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="header">
+            <ul>
+                <li><a href="#aboutme">|About me</a></li>
+                <li><a href="#myskills">|My Skills</a></li>
+                <li><a href="#mywork">|My Work</a></li>
+                <li><a href="#contact">|Contact</a></li>
+            </ul>
+        </div>
+        <div id="font1">
+            <div id="top1">
+                <h2 class="bigtitle">Amel BOUGRINE</h2>
+                <p class="bigpara">Welcome To My Website</p>
+            </div>
+            <div id="middle1"></div> 
+            <div id="down1"></div> 
+        </div> 
+        <div id="aboutme">
+            <h2 class="smalltitle" style="top: 115px !important;">Who I am ?</h2>
+            <p class="smallpara" style="top: 115px;">I am a Self-taugh Web developer, I help people build better and more meaningful products. <br>My work ranges from strategic planning and rough prototyping in the early stages, <br>to creating a strong visual design language, <br>all of which increases the value of both the brand and the product.
+            </p>
+        </div>
+        <div id="font2"></div>
+        <div id="myskills"></div>
+        <div class="bloc">
+            <h2 class="smalltitle">My Skills</h2>
+        </div>
+        <div class="double d1">
+            <div class="side" style="float:right !important;">
+                <p><b class="smalltitle">Responsive Design</b></p>
+                <p class="smallpara">Because today's web is “mobile-friendly”, I am able to adapt a website to all resolutions, from the smartphone to the computer screen, via the tablet.
+                    Responsive Design allows the site to be viewed in a suitable format from any device.</p>
+            </div>
+            <div class="img1"></div>
+        </div>
+        <div class="double d2">   
+            <div class="side" style="float:left !important;">
+                <p><b class="smalltitle">Web Design</b></p>
+                <p class="smallpara">From a creative brief or a specification, I can meet the needs of users by creating attractive and intuitive interfaces.
+                    I like to organize my work by respecting the logical stages of web design, from the project tree to graphic creation, until its development.</p>
+            </div>
+            <div class="img2" style="float:right !important;"></div>
+        </div>
+        <div class="double d3"> 
+            <div class="side"style="float:right !important;">
+                <p><b class="smalltitle">Web development</b></p>
+                <p class="smallpara">I use HTML5, CSS3, React and JavaScript. I carry out a technological watch daily in order to keep myself informed of the latest developments in front-end development: JavaScript, Angular, React, View ...
+                    So I make sure to learn new techniques to optimize my work.</p>
+            </div>
+            <div class="img3"style="float:left !important;"></div>
+        </div>
+        <div id="mywork"></div>
+        <div class="bloc">
+            <h2 class="smalltitle">My Work</h2>
+        </div>
+        <div class="double d4">
+            <img class="project" src="images/Drums.png">
+            <img class="project" src="images/MemoryGame.png">
+        </div>
+        <div id="contact"></div>
+        <div class="bloc">
+            <h2 class="smalltitle">Contact</h2>
+        </div>
+        <div class="double d5">
+            <h2 class="contact"><b>Interested in working together? We should queue up a chat</b><br><br>_ Phone: +216 53 997 941
+                <br>_ E-mail: amel.1989ab@gmail.com<br>_ Adress: Ariana, Tunisia</h2>    
+            <form id="myform">
+                <input type="text" placeholder=" Name" class="inputform smallinput" >
+                <input type="text" placeholder=" Surname" class="inputform smallinput" required><br>
+                <input type="text" placeholder=" Telephone" class="inputform largeinput" required><br>
+                <input type="email" placeholder=" E-Mail" class="inputform largeinput" required><br>
+                <textarea placeholder="Write your message here..." rows="6" cols="34" class="inputform" required></textarea><br>
+                <div id="button">Send</div>
+                <small id="send" class="hide">Your message has been sent</small>
+            </form>    
+                    
+        </div>
+        <div class="bloc d6">
+            <small class="small">2020 Made with Passion | Amel Bougrine</small>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("button").addEventListener('click', ()=> {
+                //event.preventDefault();
+                document.getElementById("send").classList.remove("hide");
+            });
+        </script>
+    </body>
+</html>
