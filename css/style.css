@@ -223,7 +223,7 @@ li {
     height: auto;
     width: 350px;
     position: relative;
-    top: 20px;
+    top: 40px;
     left: 20px;
     margin: 0px;
 }
@@ -232,6 +232,8 @@ li {
     margin: 10px 20px;
     border: none;
     border-bottom: #141414 solid 1px;
+    width: 290px;
+    height: 20px;
 }
 .inputform:focus {
     outline: 0;
@@ -240,16 +242,12 @@ li {
 .inputform:hover {
     border-bottom: #141414 solid 3px;
 }
-.smallinput {
-    width: 123px;
-    height: 30px;
-}
 .largeinput {
-    width: 290px;
-    height: 30px;
+    height: 70px !important;
 }
 input::placeholder, textarea::placeholder {
     font-size: 14px;
+    color: #1f1e1d;
 }
 #button {
     background-color: #ffffff;
@@ -272,11 +270,11 @@ input::placeholder, textarea::placeholder {
 }
 .contact{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
     color: #141414;
     position: relative;
-    top: 20px;
+    margin: 0;
+    top: 30px;
     left: 40px;
 }
 .project {
@@ -296,4 +294,18 @@ img:hover {
     cursor: pointer;
     opacity: 1;
 }
-
+i {
+    font-size: 26px;
+    position: relative; 
+    color: #141414;
+    align-self: center;
+}
+#linkedin, #github, #call, #mail, #address {
+    width: 70px;
+    height: 24.5px;
+    background-color: #836553;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    margin: 5px 0;
+}
