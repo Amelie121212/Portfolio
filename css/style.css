@@ -327,6 +327,24 @@ i {
 .link:hover {
     background-color: #141414;
 }
+#totop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    top: 300px;
+    display: none;
+    z-index: 200; 
+}
+#top_appear {
+    font-size: 50px;
+    color: #971547;
+    opacity: 0.8;
+}
+#top_appear:hover {
+    opacity: 1;
+    font-size: 55px;
+}
 @keyframes rotate {
     0% {
         transform: rotate(0deg);

@@ -91,17 +91,27 @@
                 <textarea placeholder="Write your message here..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
                 <div id="button">Send</div>
                 <small id="send" class="hide">Your message has been sent</small>
-            </form>    
-                    
+            </form>            
         </div>
+        <a href="#" id="totop" title="Go back to top"><i  id="top_appear" class="fas fa-arrow-alt-circle-up"></i></a>
         <div class="bloc d6">
             <small class="small">2020 Made with Passion | Amel Bougrine</small>
         </div>
         <script type="text/javascript">
-            document.getElementById("button").addEventListener('click', ()=> {
-                //event.preventDefault();
-                document.getElementById("send").classList.remove("hide");
-            });
+        var top = document.getElementById("totop");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                top.style.display = "block";
+            } else {
+                top.style.display = "none";
+            }
+        }
+            
+        document.getElementById("button").addEventListener('click', ()=> {
+            //event.preventDefault();
+            document.getElementById("send").classList.remove("hide");
+        });
         </script>
     </body>
 </html>
