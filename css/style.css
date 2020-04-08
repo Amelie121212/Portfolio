@@ -332,18 +332,19 @@ i {
     height: 50px;
     position: fixed;
     right: 10px;
-    top: 300px;
+    top: 55vh;
     display: none;
     z-index: 200; 
+    
 }
 #top_appear {
     font-size: 50px;
     color: #971547;
-    opacity: 0.8;
+    opacity: 0.8;  
 }
 #top_appear:hover {
     opacity: 1;
-    font-size: 55px;
+    font-size: 54px;
 }
 @keyframes rotate {
     0% {
