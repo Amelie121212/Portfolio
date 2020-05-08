@@ -1,40 +1,49 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
 html,body {
-	margin: 0;
-    padding: 0;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+.navbar{
+    background-color: #141414 !important;
+}
+.navbar-nav {
+    padding: 10px 0;
 }
 .nav-link {
     color: #ffffff !important;
 }
 .nav-link:hover {
-    color: #d4d3d3!important;
+    color: #bdbbbb!important;
 }
-#font1{
+#fixed {
     background-image: url(../images/font1.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    width: 100%;
-    height: 630px;
-    position: relative;   
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
 }
-#top1 {
+.top {
+    align-self: center;
+    color: #ffffff;
     width: 100%;
-    height: 270px;
+    height: 150px;
     position: relative;
     top: 80px;
     background-color: #0c262786;
 }
-#middle1 {
+.middle {
     width: 100%;
     height: 105px;
     position: relative;
     top: 100px;
     background-color: #0c262786;
 }
-#down1 {
+.down {
     width: 100%;
     height: 105px;
     position: relative;
