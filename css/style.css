@@ -1,11 +1,22 @@
 html,body {
+    overflow-x:hidden;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Courier New', Courier, monospace !important;
 }
+figure {
+    padding: 0;
+    margin: 0;
+}
+div[class*="col"] {
+    padding: 0;
+}
+/* ------navbar----- */
 .navbar{
-    background-color: #141414 !important;
+    background-color: #141414 !important; 
 }
 .navbar-nav {
-    padding: 10px 0;
+   padding: 10px 0;
 }
 .nav-link {
     color: #ffffff !important;
@@ -13,18 +24,17 @@ html,body {
 .nav-link:hover {
     color: #bdbbbb!important;
 }
+/* ------name----- */
 #fixed {
     background-image: url(../images/font1.png);
-    position: fixed;
-    display: block;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
 }
 .top {
     color: #eee8e8;
@@ -44,10 +54,43 @@ html,body {
     background-color: #0c262786;
 }
 .down {
-    height: 80px;
+    height: 70px;
     top: 60px;
     background-color: #0c262786;
 }
+/* ------aboutme----- */
+ #myskills, #mywork, #contact, #aboutme {
+    position: relative;
+    bottom: 50px;
+    display: inline;
+}
+.bar {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #141414;
+    color: #eee8e8;
+}
+.bar h1 {
+    margin: 35px 0;
+}
+.aboutme {
+    height: 50vh !important;
+}
+.aboutme h1 {
+    margin: 90px 0 15px 0;
+}
+#fixed2 {
+    background-image: url(../images/font2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+/* ----------- */
 .bigtitle {
     font-family: 'Courier New', Courier, monospace;
     font-size: 55px;
@@ -87,22 +130,7 @@ html,body {
     text-align: center;
     margin: 10px 50px;
 }
-#aboutme {
-    position: relative;
-    width: 100%;
-    height: 330px;
-    background-color: #141414;
-}
-#font2 {
-    background-image: url(../images/font2.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 335px;
-    position: relative;
-  
-}
+
 .bloc {
     position: relative;
     width: 100%;
@@ -150,11 +178,7 @@ html,body {
     width: 100%;
     height: 70vh;
 }
-#mywork, #myskills, #contact {
-    position: relative;
-    bottom: 20px;
-    display: inline;
-}
+
 .d1 {
     background-image: url(../images/img3.png);
 }
