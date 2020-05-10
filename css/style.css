@@ -13,10 +13,11 @@ div[class*="col"] {
 }
 /* ------navbar----- */
 .navbar{
+    height: 76px !important;
     background-color: #141414 !important; 
 }
 .navbar-nav {
-   padding: 10px 0;
+   padding: 10px 0 !important;
 }
 .nav-link {
     color: #ffffff !important;
@@ -39,27 +40,44 @@ div[class*="col"] {
 .top {
     color: #eee8e8;
     background-color: #0c262786;
-    height: 190px;
-    top: 80px;
+    height: 210px;
+    margin-top: 80px;
 }
 .top h1 {
-    margin: 30px 0 15px 0;
+    margin: 45px 0 15px 0;
 }
 .top h1:hover {
     color: #bdbbbb;
 }
 .middle {
-    height: 150px;
-    top: 80px;
+    height: 140px;
+    margin-top: 35px;
     background-color: #0c262786;
 }
 .down {
     height: 70px;
-    top: 60px;
+    margin-top: 35px;
     background-color: #0c262786;
 }
 /* ------aboutme----- */
- #myskills, #mywork, #contact, #aboutme {
+.aboutme {
+    height: 50vh !important;
+    padding: 30px 40px !important;
+}
+.aboutme h1 {
+    margin: 70px 0 15px 0;
+}
+#fixed2 {
+    background-image: url(../images/font2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+/* ------My skills----- */
+#myskills, #mywork, #contact, #aboutme {
     position: relative;
     bottom: 50px;
     display: inline;
@@ -72,127 +90,56 @@ div[class*="col"] {
     color: #eee8e8;
 }
 .bar h1 {
-    margin: 35px 0;
+    margin: 40px 0;
 }
-.aboutme {
-    height: 50vh !important;
-}
-.aboutme h1 {
-    margin: 90px 0 15px 0;
-}
-#fixed2 {
-    background-image: url(../images/font2.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    position: relative;
-}
-
-/* ----------- */
-.bigtitle {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 55px;
-    font-weight: bold;
-    color: #faf6f6;
-    position: relative;
-    top: 90px;
-    text-align: center;
-}
-.bigtitle:hover {
-   color: #b6a6a6 !important;
-}
-.smalltitle {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    font-weight: bold;
-    color: #faf6f6;
-    position: relative;
-    top: 50px;
-    text-align: center;
-    margin: 0 auto;
-}
-.bigpara {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    color: #faf3f3;
-    position: relative;
-    top: 70px;
-    text-align: center;
-}
-.smallpara {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    color: #faf3f3;
-    position: relative;
-    top: 100px;
-    text-align: center;
-    margin: 10px 50px;
-}
-
-.bloc {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    background-color: #141414;
-}
-.side {
-    position: relative;
-    width: 50%;
-    height: 50%;
+.skill {
     height: 100%;
     background-color: #0c2627ef;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-align: center;
+    padding: 30px 40px !important;
+}
+.skill p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+.skill h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    color:#ebd454;
 }
 .img1 {
     background-image: url(../images/img1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 50%;
-    height: 100%;
+    height: auto;
 }
 .img2 {
     background-image: url(../images/img2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 50%;
-    height: 100%;
+    height: auto;
 }
 .img3 {
     background-image: url(../images/img3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    width: 50%;
-    height: 100%;
+    height: auto;
 }
-.double {
-    position: relative;
+/* ------My skills----- */
+#fixed3 {
+    background-image: url(../images/work11.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
+    position: relative;
 }
+/* ------Contact----- */
 
-.d1 {
-    background-image: url(../images/img3.png);
-}
-.d2 {
-    background-image: url(../images/img2.png);
-}
-.d3 {
-    background-image: url(../images/img1.png);
-}
-.d4 {
-    background-image: url(../images/work11.jpg); 
-    background-attachment: fixed;
-    height: 80vh !important;
-}
+
+
 .d5 {
     background-image: url(../images/work9.jpg); 
     height: 75vh !important;

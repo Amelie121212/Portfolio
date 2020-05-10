@@ -31,17 +31,17 @@
             </div>
         </nav>
         <!-- Name -->
-        <div class="container-fluide" style="position: relative; top:76px;">
+        <div class="container-fluide" style="position: relative; top:76px; height: 100vh;">
             <figure>
                 <div id="fixed"></div>
             </figure>
-            <div class="row text-center" style="height: 570px;">
+            <div class="row text-center">
                 <div class="col-12 top">
                     <h1 class="display-4 font-weight-bold">Amel BOUGRINE</h1>
                     <h3 class="display-6">Welcome To My Website</h3>
                 </div>
-                <div class="col-12 middle"></div>
-                <div class="col-12 down"></div>
+                <div class="middle col-12"></div>
+                <div class="down col-12"></div>
             </div> 
         </div> 
         <!-- About me  -->
@@ -63,51 +63,51 @@
             <div class="row text-center">
                 <div class="col-12 bar">
                     <h1 class="display-6 font-weight-bold">My Skills</h1>
+                </div>  
+                <div class="col-6 img1"></div>  
+                <div class="col-6 skill">
+                    <h3 class="font-weight-bold">Responsive Design</h3>
+                    <p class="display-6">Because today's web is Mbile-Friendly, I am able to adapt a website to all resolutions, from the smartphone to the computer screen, via the tablet.
+                    Responsive Design allows the site to be viewed in a suitable format from any device.</p>
+                </div> 
+                <div class="col-6 skill">
+                    <h3 class="font-weight-bold">Web Design</h3>
+                    <p class="display-6">From a creative brief or a specification, I can meet the needs of users by creating attractive and intuitive interfaces. I like to organize my work by respecting the logical stages of web design from the project tree to graphic creation, until its development.</p>
+                </div>
+                <div class="col-6 img2"></div> 
+                <div class="col-6 img3"></div>  
+                <div class="col-6 skill">
+                    <h3 class="font-weight-bold">Web Development</h3>
+                    <p class="display-6">I use HTML5, CSS3, React and JavaScript. I carry out a technological watch daily in order to keep myself informed of the latest developments in front-end development: JavaScript, Angular, React, View... So I make sure to learn new techniques to optimize my work.</p>
                 </div>
             </div>
         </div>
-        <div class="double d1">
-            <div class="side" style="float:right !important;">
-                <p><b class="smalltitle" Style="color:#e6ba5c; top: 70px !important;">Responsive Design</b></p>
-                <p class="smallpara">Because today's web is “mobile-friendly”, I am able to adapt a website to all resolutions, from the smartphone to the computer screen, via the tablet.
-                    Responsive Design allows the site to be viewed in a suitable format from any device.</p>
-            </div>
-            <div class="img1"></div>
-        </div>
-        <div class="double d2">   
-            <div class="side" style="float:left !important;">
-                <p><b class="smalltitle" Style="color:#e6ba5c; top: 70px !important;">Web Design</b></p>
-                <p class="smallpara">From a creative brief or a specification, I can meet the needs of users by creating attractive and intuitive interfaces.
-                    I like to organize my work by respecting the logical stages of web design, from the project tree to graphic creation, until its development.</p>
-            </div>
-            <div class="img2" style="float:right !important;"></div>
-        </div>
-        <div class="double d3"> 
-            <div class="side"style="float:right !important;">
-                <p><b class="smalltitle" Style="color:#e6ba5c; top: 70px !important;">Web development</b></p>
-                <p class="smallpara">I use HTML5, CSS3, React and JavaScript. I carry out a technological watch daily in order to keep myself informed of the latest developments in front-end development: JavaScript, Angular, React, View ...
-                    So I make sure to learn new techniques to optimize my work.</p>
-            </div>
-            <div class="img3"style="float:left !important;"></div>
-        </div>
+        <!-- My Work-->
         <div id="mywork"></div>
-        <div class="bloc">
-            <h2 class="smalltitle">My Work</h2>
-        </div>
-        <div class="double d4">
-            <div class="projet">
-                <img class="projet1" src="images/projet1.png"></a>
-                <img class="projet1" src="images/circles.svg">
-                <img class="projet1 rotate22" src="images/circles-1.png">
-                <a href="#mywork"><img class="projet1 rotate44" src="images/circles-2.png"></a>
+        <div class="container-fluide" >
+            <div class="row text-center">
+                <div class="col-12 bar">
+                    <h1 class="display-6 font-weight-bold">My Work</h1>
+                </div>  
+                <div class="col-12" id="fixed3">
+                    <div class="double d4">
+                        <div class="projet">
+                            <img class="projet1" src="images/projet1.png"></a>
+                            <img class="projet1" src="images/circles.svg">
+                            <img class="projet1 rotate22" src="images/circles-1.png">
+                            <a href="#mywork"><img class="projet1 rotate44" src="images/circles-2.png"></a>
+                        </div>
+                        <div class="projet">
+                            <img class="projet2" src="images/projet2.png">
+                            <img class="projet2" src="images/circles.svg">
+                            <img class="projet2 rotate22" src="images/circles-1.png">
+                            <a href="#mywork"><img class="projet2 rotate44" src="images/circles-2.png"></a>
+                        </div>       
+                    </div> 
+                </div>
             </div>
-            <div class="projet">
-                <img class="projet2" src="images/projet2.png">
-                <img class="projet2" src="images/circles.svg">
-                <img class="projet2 rotate22" src="images/circles-1.png">
-                <a href="#mywork"><img class="projet2 rotate44" src="images/circles-2.png"></a>
-            </div>       
-        </div> 
+        </div>  
+        <!-- Contact -->
         <div id="contact"></div>
         <div class="bloc">
             <h2 class="smalltitle">Contact</h2>
@@ -124,7 +124,7 @@
                 <input type="text" placeholder="Telephone" class="inputform " required><br>
                 <input type="email" placeholder="E-mail" class="inputform " required><br>
                 <textarea placeholder="Write your message here..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
-                <div id="button">Send</div>
+                <a id="button" href = "mailto:abc@example.com?subject = Feedback&body = Message">Send</a>
                 <small id="send" class="hide">Your message has been sent</small>
             </form>            
         </div>
