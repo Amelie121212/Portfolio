@@ -109,30 +109,42 @@
         </div>  
         <!-- Contact -->
         <div id="contact"></div>
-        <div class="bloc">
-            <h2 class="smalltitle">Contact</h2>
+        <div class="container-fluide" >
+            <div class="row">
+                <div class="col-12 bar">
+                    <h1 class="display-6 font-weight-bold">Contact</h1>
+                </div>  
+                <div class="col-12" id="fixed3">  
+                    <div class="double d5">
+                    <h2 class="contact">Interested in working together ? Contact Me</h2> 
+                    <div class="divlink"><i  class="fab fa-linkedin"></i><p class="link">linkedin.com/in/amelbougrine</p></div>
+                    <div class="divlink"><i class="fab fa-github-square"></i><p class="link">github.com/Amelie121212</p></div>
+                    <div class="divlink"><i class="fas fa-phone-square-alt"></i><p class="link">+216 53 997 941</p></div>
+                    <div class="divlink"><i class="fas fa-envelope-square"></i><p class="link">amel.1989ab@gmail.com</p></div>
+                    <h2 class="contact" style="top: 80px;">Or leave a message:</h2> 
+                    <form id="myform" action="/action_page.php" method="get" autocomplete="on">
+                        <input type="text" placeholder="Name" class="inputform " >
+                        <input type="text" placeholder="Telephone" class="inputform " required><br>
+                        <input type="email" placeholder="E-mail" class="inputform " required><br>
+                        <textarea placeholder="Write your message here..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
+                        <a id="button" href = "mailto:abc@example.com?subject = Feedback&body = Message">Send</a>
+                        <small id="send" class="hide">Your message has been sent</small>
+                    </form>            
+                    </div>
+                </div>       
+            </div>
         </div>
-        <div class="double d5">
-            <h2 class="contact">Interested in working together ? Contact Me</h2> 
-            <div class="divlink"><i  class="fab fa-linkedin"></i><p class="link">linkedin.com/in/amelbougrine</p></div>
-            <div class="divlink"><i class="fab fa-github-square"></i><p class="link">github.com/Amelie121212</p></div>
-            <div class="divlink"><i class="fas fa-phone-square-alt"></i><p class="link">+216 53 997 941</p></div>
-            <div class="divlink"><i class="fas fa-envelope-square"></i><p class="link">amel.1989ab@gmail.com</p></div>
-            <h2 class="contact" style="top: 80px;">Or leave a message:</h2> 
-            <form id="myform" action="/action_page.php" method="get" autocomplete="on">
-                <input type="text" placeholder="Name" class="inputform " >
-                <input type="text" placeholder="Telephone" class="inputform " required><br>
-                <input type="email" placeholder="E-mail" class="inputform " required><br>
-                <textarea placeholder="Write your message here..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
-                <a id="button" href = "mailto:abc@example.com?subject = Feedback&body = Message">Send</a>
-                <small id="send" class="hide">Your message has been sent</small>
-            </form>            
+        <!-- Footer -->
+        <div class="col-12 bar"> 
+            <small class="display-6">2020 Made with Passion | Amel Bougrine</small>
         </div>
-        <div id="totop" onclick="scrollToTop(); return false" title="Go back to top"><i  id="top_appear" class="fas fa-arrow-alt-circle-up"></i></div>
-        <div class="bloc d6">
-            <small class="small">2020 Made with Passion | Amel Bougrine</small>
+        <!-- Go to top -->
+        <div id="totop" onclick="scrollToTop(); return false" title="Go back to top">
+            <i  id="top_appear" class="fas fa-arrow-alt-circle-up"></i>
         </div>
+        <!-- Script -->
         <script type="text/javascript">
+        // Scroll to top
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
             var top = document.getElementById("totop");
@@ -150,10 +162,12 @@
                 scrollAnimation = setTimeout("scrollToTop()", 30);
             } else clearTimeout(scrollAnimation);
         };
-
+        // Messege send
         document.getElementById("button").addEventListener('click', ()=> {
-            //event.preventDefault();
-            document.getElementById("send").classList.remove("hide");
+            event.preventDefault();
+            setTimeout(() => {
+                document.getElementById("send").classList.remove("hide");                
+            }, 3000); 
         });
         </script>
     </body>
