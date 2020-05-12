@@ -8,7 +8,7 @@ figure {
     padding: 0;
     margin: 0;
 }
-div[class*="col"] {
+[class*="col"] {
     padding: 0;
 }
 /* ------navbar----- */
@@ -60,9 +60,34 @@ div[class*="col"] {
     background-color: #0c262786;
 }
 /* ------aboutme----- */
+.photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px 80px;
+}
+.imgme {
+    width: 200px !important; 
+    height: 200px !important;
+    top:10% !important;
+    left:8% !important;
+}
+.cercle {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 250px;
+    height: 250px;
+}
+.rotate22 {
+    animation: rotate 22s linear infinite;
+}
+.rotate44 {
+    animation: rotate 44s linear infinite;
+}
 .aboutme {
-    height: 50vh !important;
-    padding: 30px 40px !important;
+    text-align: center;
+    padding: 10px 30px !important;
 }
 .aboutme h1 {
     margin: 70px 0 15px 0;
@@ -137,9 +162,6 @@ div[class*="col"] {
     position: relative;
 }
 /* ------Contact----- */
-
-
-
 .d5 {
     background-image: url(../images/work9.jpg); 
     height: 75vh !important;
@@ -230,26 +252,6 @@ input::placeholder, textarea::placeholder {
     top: 30px;
     left: 40px;
 }
-.projet {
-    width: 370px;
-    height: 370px;
-    display: inline-block;
-    position: relative;
-    margin: 90px 135px;
-}
-.projet1, .projet2 {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 370px;
-    height: 370px;
-}
-.rotate22 {
-    animation: rotate 22s linear infinite;
-}
-.rotate44 {
-    animation: rotate 44s linear infinite;
-}
 i {
     font-size: 26px;
     position: relative; 
@@ -299,6 +301,15 @@ i {
 #top_appear:hover {
     opacity: 1;
     font-size: 54px;
+}
+@media (max-width: 992px){
+    
+}
+@media (max-width: 768px){
+    
+}
+@media (max-width: 576px){
+
 }
 @keyframes rotate {
     0% {

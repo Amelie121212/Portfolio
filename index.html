@@ -47,8 +47,14 @@
         <!-- About me  -->
         <div id="aboutme"></div>
         <div class="container-fluide">
-            <div class="row text-center">
-                <div class="col-12 bar aboutme">
+            <div class="row bar text-center" style="height: 50vh !important;">
+                <div class="col-4 photo">
+                    <img class="cercle imgme" src="images/me.png">
+                    <img class="cercle" src="images/circles.svg">
+                    <img class="cercle rotate22" src="images/circles-1.png">
+                    <img class="cercle rotate44" src="images/circles-2.png">
+                </div>
+                <div class="col-8 aboutme">
                     <h1 class="display-6 font-weight-bold">Who I am ?</h1>
                     <h5 class="display-6">I am a Self-taugh Web developer, I help people build better and more meaningful products. <br>My work ranges from strategic planning and rough prototyping in the early stages, <br>to creating a strong visual design language, <br>all of which increases the value of both the brand and the product.</h5>
                 </div>
@@ -155,8 +161,7 @@
             }
         };
         function scrollToTop() {
-            var position =
-            document.body.scrollTop || document.documentElement.scrollTop;
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
             if (position) {
                 window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
                 scrollAnimation = setTimeout("scrollToTop()", 30);
