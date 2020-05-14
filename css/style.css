@@ -4,6 +4,9 @@ html,body {
     padding: 0px;
     font-family: 'Courier New', Courier, monospace !important;
 }
+figure{
+    margin: 0;
+}
 [class*="col"] {
     padding: 0;
 }
@@ -161,6 +164,51 @@ html,body {
     height: 80vh;
     position: relative;
 }
+/* -----carousel---- */
+.scene {
+    border: 1px solid #CCC;
+    position: relative;
+    width: 210px;
+    height: 140px;
+    margin: 80px auto;
+    perspective: 1000px;
+}
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+} 
+.carousel_cell {
+    position: absolute;
+    width: 190px;
+    height: 120px;
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 116px;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+}
+.carousel_cell:nth-child(9n+1) { background: #ff0000cc; }
+.carousel_cell:nth-child(9n+2) { background: #ffaa00cc; }
+.carousel_cell:nth-child(9n+3) { background: #aaff00cc; }
+.carousel_cell:nth-child(9n+4) { background: #00ff00cc; }
+.carousel_cell:nth-child(9n+5) { background: #00ffaacc; }
+.carousel_cell:nth-child(9n+6) { background: #00aaffcc; }
+
+.carousel_cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
+.carousel_cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
+.carousel_cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
+.carousel_cell:nth-child(4) { transform: rotateY(120deg) translateZ(288px); }
+.carousel_cell:nth-child(5) { transform: rotateY(160deg) translateZ(288px); }
+.carousel_cell:nth-child(6) { transform: rotateY(200deg) translateZ(288px); }
+/* ----contact----  */
 #fixed4 {
     background-image: url(../images/work9.jpg);
     background-repeat: no-repeat;
@@ -169,20 +217,7 @@ html,body {
     height: 80vh;
     position: relative;
 }
-.d6 { 
-    height: 10vh !important;
-}
-.knowmore {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    font-weight: bold;
-    color: #141414;
-    margin: 0;
-    position: relative;
-    top: 20px;
-    left: 30px;
-}
-#send {
+#message {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
     color: #b14444;
@@ -220,7 +255,7 @@ input::placeholder, textarea::placeholder {
     font-size: 14px;
     color: #1f1e1d;
 }
-#button {
+#send {
     background-color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;

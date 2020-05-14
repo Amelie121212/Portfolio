@@ -98,8 +98,23 @@
                     <h1 class="display-6 font-weight-bold">My Work</h1>
                 </div>  
                 <div class="col-12" id="fixed3">
-                    <div class="double d4">
-                            
+                    <div>
+                        <div class="scene">
+                            <div class="carousel">
+                                <div class="carousel_cell">1</div>
+                                <div class="carousel_cell">2</div>
+                                <div class="carousel_cell">3</div>
+                                <div class="carousel_cell">4</div>
+                                <div class="carousel_cell">5</div>
+                                <div class="carousel_cell">6</div>
+                            </div>
+                        </div> 
+                        <div class="carousel-options">
+                            <p>
+                                <button class="previous-button">Previous</button>
+                                <button class="next-button">Next</button>
+                            </p> 
+                        </div>     
                     </div> 
                 </div>
             </div>
@@ -124,8 +139,8 @@
                         <input type="text" placeholder="Telephone" class="inputform " required><br>
                         <input type="email" placeholder="E-mail" class="inputform " required><br>
                         <textarea placeholder="Write your message here..." rows="4" cols="34" class="inputform largeinput" required></textarea><br>
-                        <a id="button" href = "mailto:abc@example.com?subject = Feedback&body = Message">Send</a>
-                        <small id="send" class="hide">Your message has been sent</small>
+                        <button type="submit" id="send">Send</button>
+                        <small id="message" class="hide">Your message has been sent</small>
                     </form>            
                     </div>
                 </div>       
@@ -139,32 +154,6 @@
         <div id="totop" onclick="scrollToTop(); return false" title="Go back to top">
             <i  id="top_appear" class="fas fa-arrow-alt-circle-up"></i>
         </div>
-        <!-- Script -->
-        <script type="text/javascript">
-        // Scroll to top
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            var top = document.getElementById("totop");
-            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-                top.style.display = "block";
-            } else {
-                top.style.display = "none";
-            }
-        };
-        function scrollToTop() {
-            var position = document.body.scrollTop || document.documentElement.scrollTop;
-            if (position) {
-                window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-                scrollAnimation = setTimeout("scrollToTop()", 30);
-            } else clearTimeout(scrollAnimation);
-        };
-        // Messege send
-        document.getElementById("button").addEventListener('click', ()=> {
-            event.preventDefault();
-            setTimeout(() => {
-                document.getElementById("send").classList.remove("hide");                
-            }, 3000); 
-        });
-        </script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
