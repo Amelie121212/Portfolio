@@ -32,25 +32,21 @@ var cells = carousel.querySelectorAll('.carousel_cell');
 var cellCount = 6;
 var selectedIndex = 0;
 var cellWidth = carousel.offsetWidth;
-var rotateFn = 'rotateY';
 var radius, theta;
 theta = 360 / cellCount;
 radius = Math.round( ( cellWidth / 2) / Math.tan( Math.PI / cellCount ) );
 
 // set position
-for ( var i=0; i < 6; i++ ) {
+for ( var i = 0; i < cellCount; i++ ) {
     var cell = cells[i];
-    if ( i < cellCount ) {
-      cell.style.opacity = 1;
-      var cellAngle = theta * i;
-      cell.style.transform = rotateFn + '(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
-    } 
+    cell.style.opacity = 1;
+    var cellAngle = theta * i;
+    cell.style.transform = 'rotateY(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
 }
 
 function rotateCarousel() {
   var angle = theta * selectedIndex * -1;
-  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
-    rotateFn + '(' + angle + 'deg)';
+  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 'rotateY' + '(' + angle + 'deg)';
 }
 
 var prevButton = document.querySelector('.previous-button');

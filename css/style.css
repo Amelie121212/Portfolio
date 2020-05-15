@@ -165,8 +165,11 @@ figure{
     position: relative;
 }
 /* -----carousel---- */
-.scene {
+.container {
     border: 1px solid #CCC;
+    margin-top: 60px;
+}
+.scene {
     position: relative;
     width: 210px;
     height: 140px;
