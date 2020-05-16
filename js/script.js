@@ -31,7 +31,7 @@ var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel_cell');
 var cellCount = 6;
 var selectedIndex = 0;
-var cellWidth = carousel.offsetWidth;
+var cellWidth = carousel.offsetWidth+20;
 var radius, theta;
 theta = 360 / cellCount;
 radius = Math.round( ( cellWidth / 2) / Math.tan( Math.PI / cellCount ) );
