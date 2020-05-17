@@ -22,7 +22,7 @@ if (send) {
         event.preventDefault();
         setTimeout(() => {
             document.getElementById('message').classList.remove('hide');                
-        }, 500); 
+        }, 500);
     });
 }
 
@@ -39,10 +39,10 @@ radius = Math.round( ( cellWidth / 2) / Math.tan( Math.PI / cellCount ) );
 // set position
 for ( var i = 0; i < cellCount; i++ ) {
     var cell = cells[i];
-    cell.style.opacity = 1;
     var cellAngle = theta * i;
     cell.style.transform = 'rotateY(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
 }
+carousel.style.transform = 'translateZ(' + -radius + 'px) ';
 
 function rotateCarousel() {
   var angle = theta * selectedIndex * -1;
