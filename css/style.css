@@ -164,7 +164,6 @@ figure{
     height: 75vh;
     position: relative;
 }
-/* -----carousel---- */
 .container {
     width: 600px;
     height: 380px;
@@ -192,9 +191,15 @@ figure{
     height: 220px;
     left: 15px;
     top: 15px;
-    border: 2px solid black;
-    background: hsla(160, 99%, 41%, 0.85);
+    border: 2px solid black;    
 }
+.carousel_cell:nth-child(9n+1) { background: #212529e1; }
+.carousel_cell:nth-child(9n+2) { background: #37c55bef; }
+.carousel_cell:nth-child(9n+3) { background: #9cb838ef; }
+.carousel_cell:nth-child(9n+4) { background: #c4ba32ef; }
+.carousel_cell:nth-child(9n+5) { background: #c58736ef; }
+.carousel_cell:nth-child(9n+6) { background: #38bcbeef; }
+
 .carousel_cell:hover {
     background: hsl(160, 99%, 31%);
 }
@@ -205,7 +210,7 @@ figure{
 .carousel_cell:nth-child(5) { transform: rotateY(160deg); }
 .carousel_cell:nth-child(6) { transform: rotateY(200deg); }
 .carousel_cell h3 {
-    color: #141414;
+    color: #f5f5f5;
     font-size: 24px;
     margin-top: 50px;
 }
@@ -213,14 +218,24 @@ figure{
     text-decoration: none;
 }
 .bord {
-    color: #fffafa;
-    font-size: 18px;
+    color: #141414;
+    font-size: 16px;
     padding: 3px 6px 0px 6px;
-    border: 1px solid #5a5753e8;
+    border: 1px solid #6e6c6c;
     border-radius: 5px;
-    background-color: #5a5753e8;
+    background-color: #fffafa;
     display: inline-block;
     margin-top: 20px;
+}
+.bord:hover {
+    background-color: #d6d2d2;
+}
+.btn {
+    width: 45px;
+    height: 40px;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 10px;
 }
 /* ----contact----  */
 #fixed4 {
