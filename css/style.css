@@ -167,8 +167,7 @@ figure{
 .container {
     width: 600px;
     height: 380px;
-    border: 1px solid #CCC;
-    margin-top: 60px;
+    margin-top: 90px;
 }
 .scene {
     position: relative;
@@ -191,17 +190,18 @@ figure{
     height: 220px;
     left: 15px;
     top: 15px;
-    border: 2px solid black;    
+    border-radius: 15px;
+    padding: 20px;  
+    background-image: url(../images/code.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-.carousel_cell:nth-child(9n+1) { background: #212529e1; }
-.carousel_cell:nth-child(9n+2) { background: #37c55bef; }
-.carousel_cell:nth-child(9n+3) { background: #9cb838ef; }
-.carousel_cell:nth-child(9n+4) { background: #c4ba32ef; }
-.carousel_cell:nth-child(9n+5) { background: #c58736ef; }
-.carousel_cell:nth-child(9n+6) { background: #38bcbeef; }
-
 .carousel_cell:hover {
-    background: hsl(160, 99%, 31%);
+    background-image: url(../images/code2.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 .carousel_cell:nth-child(1) { transform: rotateY(  0deg); }
 .carousel_cell:nth-child(2) { transform: rotateY( 40deg); }
@@ -209,9 +209,11 @@ figure{
 .carousel_cell:nth-child(4) { transform: rotateY(120deg); }
 .carousel_cell:nth-child(5) { transform: rotateY(160deg); }
 .carousel_cell:nth-child(6) { transform: rotateY(200deg); }
+
 .carousel_cell h3 {
-    color: #f5f5f5;
-    font-size: 24px;
+    color: #f59b8f;
+    font-size: 20px;
+    margin: 0 30px;
     margin-top: 50px;
 }
 .carousel a {
@@ -219,7 +221,7 @@ figure{
 }
 .bord {
     color: #141414;
-    font-size: 16px;
+    font-size: 14px;
     padding: 3px 6px 0px 6px;
     border: 1px solid #6e6c6c;
     border-radius: 5px;
@@ -230,7 +232,7 @@ figure{
 .bord:hover {
     background-color: #d6d2d2;
 }
-.btn {
+.btn-dark {
     width: 45px;
     height: 40px;
     font-size: 24px;
@@ -243,23 +245,39 @@ figure{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 75vh;
     position: relative;
 }
-#message {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    color: #b14444;
+#fixed4 h2 {
+    font-size: 16px;
+    color: #141414;
     position: relative;
-    left: 5px;
-    top: 25px;
+    left: 60px;
+    margin-top: 50px;
+}
+.social {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.social a {
+    padding: 10px;
+    font-size: 26px;
+    top: 2px;
+    left: 2px;
+}
+.fa-linkedin { color: #244a9c;}
+.fa-github-square { color: #141414;}
+.fa-envelope-square { color: #c02b18;}
+.fa-phone-square-alt { color: #1a639e;}
+.fa-linkedin:hover,.fa-github-square:hover,.fa-envelope-square:hover,.fa-phone-square-alt:hover {
+    color: #d5d5d5;
 }
 #myform {
     height: auto;
     width: 350px;
     position: relative;
-    top: 80px;
-    left: 20px;
+    top: 10px;
+    left: 40px;
     margin: 0px;
 }
 .inputform {
@@ -284,63 +302,10 @@ input::placeholder, textarea::placeholder {
     font-size: 14px;
     color: #1f1e1d;
 }
-#send {
-    background-color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    color: #141414;
+.btn-outline-secondary {
+    padding: 4px 8px;
     position: relative;
-    display: inline;
-    left: 135px;
-    border: none;
-    margin: 0px;
-}
-#button:hover {
-    color: #bc8f8f;
-    cursor: pointer;
-}
-.hide {
-    visibility: hidden;
-}
-.contact{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color: #141414;
-    position: relative;
-    margin: 0;
-    top: 30px;
-    left: 40px;
-}
-i {
-    font-size: 26px;
-    position: relative; 
-    top: 2px;
-    left: 2px;
-    color: #141414;
-    display: inline;
-}
-.divlink {
-    position: relative; 
-    top: 50px;
-    left: 40px;
-    height: 26px;
-    display: flex;
-}
-.link {
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 264px;
-    height: 23px;
-    position: relative;
-    bottom: 1px;
-    margin: 5px 0;
-    padding: 5px 0px 0px 10px;
-    border-bottom: #141414 solid 1px;
-    border-left: #141414 solid 2px; 
-    color: #ffffff;
-}
-.link:hover {
-    background-color: #141414;
+    left: 135px !important;
 }
 /*----- footer -----*/
 .footer {

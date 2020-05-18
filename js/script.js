@@ -15,16 +15,6 @@ function scrollToTop() {
         scrollAnimation = setTimeout('scrollToTop()', 30);
     } else clearTimeout(scrollAnimation);
 };
- // Message send
-var send = document.querySelector('#send');
-if (send) {
-     send.addEventListener('click', ()=> {
-        event.preventDefault();
-        setTimeout(() => {
-            document.getElementById('message').classList.remove('hide');                
-        }, 500);
-    });
-}
 
 // ----carousel
 var carousel = document.querySelector('.carousel');
