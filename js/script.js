@@ -19,9 +19,9 @@ function scrollToTop() {
 // ----carousel
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel_cell');
-var cellCount = 6;
+var cellCount = 9;
 var selectedIndex = 0;
-var cellWidth = carousel.offsetWidth+20;
+var cellWidth = carousel.offsetWidth+70;
 var radius, theta;
 theta = 360 / cellCount;
 radius = Math.round( ( cellWidth / 2) / Math.tan( Math.PI / cellCount ) );
