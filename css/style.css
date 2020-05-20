@@ -69,25 +69,23 @@ figure{
     background-color: #0c262786;
 }
 /* ------aboutme----- */
+.bar1 {
+    height: 360px !important;
+}
 .photo {
-    position: absolute;
-    top:10px;
-    left:30px;
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-    margin: 35px 60px;
 }
 .imgme {
-    width: 97% !important;
-    top:0% !important;
-    left:1% !important;
-    display: block;
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    width: 250px !important;
 }
 .cercle {
     position: absolute;
-    top:0;
-    left:0;
+    top: 25%;
+    left: 23%;
     width: 250px;
     height: 250px;
 }
@@ -98,11 +96,12 @@ figure{
     animation: rotate 44s linear infinite;
 }
 .aboutme {
-    text-align: center;
-    padding: 10px 50px 10px 0px !important;
+    align-self: center; 
+    padding: 10px 30px 10px 20px !important;
 }
-.aboutme h1 {
-    margin: 50px 0 10px 0;
+.aboutme h2 {
+    text-align: center;
+    margin-bottom: 2vh;
 }
 #fixed2 {
     background-image: url(../images/font2.png);
@@ -110,7 +109,7 @@ figure{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 300px;
     position: relative;
 }
 /* ------My skills----- */
@@ -200,7 +199,7 @@ figure{
     height: 220px;
     left: 10px;
     top: 10px;
-    border: 3px solid #9acd32;
+    border: 3px solid #31a996;
     border-radius: 20px;
     padding: 20px;  
     background-image: url(../images/code.jpg); 
@@ -225,7 +224,7 @@ figure{
 .carousel_cell:nth-child(9) { transform: rotateY(320deg); }
 
 .carousel_cell h3 {
-    color: #a1ca50;
+    color: #31a996;
     font-size: 20px;
     margin: 0 30px;
     margin-top: 40px;
@@ -349,12 +348,9 @@ input::placeholder, textarea::placeholder {
 }
 /*------- @media------ */
 @media (max-width: 992px){
-    
-}
-@media (max-width: 768px){
 
 }
-@media (max-width: 576px){
+@media (max-width: 768px){
     .top h1 {
         margin-top: 70px;
         font-size: 32px;
@@ -362,7 +358,45 @@ input::placeholder, textarea::placeholder {
     .top h3 {
         font-size: 26px;
     }
-   
+    .aboutme { 
+        margin: 0 !important;
+    }
+    .aboutme h2 {
+        font-size: 28px;
+    }
+    .aboutme h5 {
+        font-size: 18px;
+    }
+    .imgme, .cercle {
+        width: 190px !important;
+        height: 190px;
+        top: 30%;
+        left:15%;
+    }
+}
+@media (max-width: 576px){
+    .photo{
+        width: 34%;
+        margin: 0vw 25%;
+    }
+    .imgme, .cercle {
+        top: 20%;
+        left: 0;
+    }
+    .aboutme {
+        text-align: center;
+        margin: 0 !important;
+        padding: 20px !important;
+    }
+    .bar1 {
+        height: 600px !important;
+    }
+    .aboutme h2 {
+        font-size: 26px;
+    }
+    .aboutme h5 {
+        font-size: 18px;
+    }
 }
 /* -----@keyframes -----*/
 @keyframes rotate {
