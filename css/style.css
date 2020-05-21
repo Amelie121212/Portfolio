@@ -127,7 +127,8 @@ figure{
     margin: 0;
 }
 .bar h1 {
-    margin: 40px 0;
+    line-height: 120px;
+    margin: 0;
 }
 .skill {
     height: 100%;
@@ -170,7 +171,7 @@ figure{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 75vh;
+    height: 500px;
     position: relative;
 }
 .container {
@@ -258,7 +259,7 @@ figure{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 75vh;
+    height: 500px;
     position: relative;
 }
 #fixed4 h2 {
@@ -365,13 +366,35 @@ input::placeholder, textarea::placeholder {
         font-size: 28px;
     }
     .aboutme h5 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .imgme, .cercle {
         width: 190px !important;
         height: 190px;
         top: 30%;
         left:15%;
+    }
+    .bar h1 {
+        font-size: 34px;
+    }
+    .skill {
+        border-bottom: 0.5px solid #146d72ef;
+    }
+    .skill p {
+        font-size: 18px;
+    }
+    .skill h3 {
+        font-size: 26px;
+    }
+    #top_appear {
+        font-size: 34px;
+    }
+    #top_appear:hover {
+        font-size: 34px;
+    }
+    #totop {
+        width: 40px;
+        right: 5px;
     }
 }
 @media (max-width: 576px){
@@ -388,14 +411,41 @@ input::placeholder, textarea::placeholder {
         margin: 0 !important;
         padding: 20px !important;
     }
+    .bar {
+        height: 100px !important;
+    }
     .bar1 {
         height: 600px !important;
+    }
+    .bar h1 {
+        font-size: 26px !important;
+        height: 90px !important;
+        line-height: 100px;
     }
     .aboutme h2 {
         font-size: 26px;
     }
     .aboutme h5 {
         font-size: 18px;
+    }
+    .img1, .img2, .img3 {
+        display: none;
+    }
+    .bar h1 {
+        font-size: 32px;
+    }
+    .skill p {
+        font-size: 16px;
+    }
+    .skill h3 {
+        font-size: 22px;
+    }
+    #fixed4 h2 {
+        margin-top: 30px;
+    }
+    #myform {
+        left: 0px;
+        margin: 0 auto;
     }
 }
 /* -----@keyframes -----*/
