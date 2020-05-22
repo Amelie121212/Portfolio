@@ -210,22 +210,23 @@ figure{
     height: 500px;
     position: relative;
 }
+.contact {
+    height: 200px;
+    width: 400px;
+    position: relative;
+    padding: 50px 20px 10px 60px;
+}
 #fixed4 h2 {
     font-size: 16px;
     color: #141414;
     position: relative;
-    left: 60px;
-    margin-top: 50px;
 }
 .social {
-    margin-top: 15px;
-    margin-left: 50px;
+    margin: 15px 20px;
 }
 .social a {
     padding: 10px;
     font-size: 26px;
-    top: 2px;
-    left: 2px;
 }
 .fa-linkedin { color: #244a9c;}
 .fa-github-square { color: #141414;}
@@ -282,7 +283,7 @@ input::placeholder, textarea::placeholder {
     height: 50px;
     position: fixed;
     right: 10px;
-    top: 55vh;
+    top: 70vh;
     display: none;
     z-index: 200; 
 }
@@ -336,6 +337,9 @@ input::placeholder, textarea::placeholder {
     }
     #carouselExampleIndicators {
         margin: 6% 8%;
+    }
+    .contact {
+        width: 350px;
     }
     #top_appear {
         font-size: 34px;
@@ -404,9 +408,9 @@ input::placeholder, textarea::placeholder {
         font-size: 14px;
         padding: 8px;
     }
-    #fixed4 h2 {
-        margin: 40px 30px 0px 30px;
-        left: 0px;
+    .contact {
+        padding: 50px 20px 10px 20px;
+        margin: 0 auto;
     }
     #myform {
         left: 0px;
