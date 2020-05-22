@@ -15,38 +15,3 @@ function scrollToTop() {
         scrollAnimation = setTimeout('scrollToTop()', 30);
     } else clearTimeout(scrollAnimation);
 };
-
-// ----carousel
-var carousel = document.querySelector('.carousel');
-var cells = carousel.querySelectorAll('.carousel_cell');
-var cellCount = 9;
-var selectedIndex = 0;
-var cellWidth = carousel.offsetWidth+70;
-var radius, theta;
-theta = 360 / cellCount;
-radius = Math.round( ( cellWidth / 2) / Math.tan( Math.PI / cellCount ) );
-
-// set position
-for ( var i = 0; i < cellCount; i++ ) {
-    var cell = cells[i];
-    var cellAngle = theta * i;
-    cell.style.transform = 'rotateY(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
-}
-carousel.style.transform = 'translateZ(' + -radius + 'px) ';
-
-function rotateCarousel() {
-  var angle = theta * selectedIndex * -1;
-  carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 'rotateY' + '(' + angle + 'deg)';
-}
-
-var prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener( 'click', function() {
-  selectedIndex--;
-  rotateCarousel();
-});
-
-var nextButton = document.querySelector('.next-button');
-nextButton.addEventListener( 'click', function() {
-  selectedIndex++;
-  rotateCarousel();
-});
